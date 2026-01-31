@@ -1,0 +1,5 @@
+Jan 27 10:01:02 server sshd[123]: Failed password for invalid user admin from 203.0.113.10 port 55221 ssh2
+Jan 27 10:01:10 server sshd[124]: Failed password for root from 203.0.113.10 port 55222 ssh2
+Jan 27 10:02:33 server sshd[130]: Accepted password for francis from 198.51.100.7 port 49811 ssh2
+Jan 27 10:03:12 server sshd[140]: Failed password for user test from 203.0.113.55 port 60001 ssh2
+Jan 27 10:05:44 server sshd[150]: Accepted password for francis from 198.51.100.7 port 49812 ssh2
