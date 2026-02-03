@@ -62,5 +62,17 @@ def analyze_log(log_path: Path, top_n: int = 5) -> None:
 
     # which IPs appeared and how often
     # The : means type hint and it means its a Counter whose keys are strings bc Counter is a dictionary
-    # The Counter() creates an object (an empty string)
+    # The Counter() creates an object (an empty dictionary)
     ip_counter: Counter[str] = Counter()
+
+    #read file line by line
+
+
+    #The log_path.open works here because log_path is a Path object 
+    #so calling .open is a method on the Path Object
+    #"utf-8" tells python to interpret bytes in the file as utf-8 so it doesnt guess
+    #The replace tells python that if it cant decode a character
+    #then just replace instead of crashing
+    with log_path.open("r", encoding= "utf-8", errors="replace") as f:
+        for line in f:
+            total_lines+=1
